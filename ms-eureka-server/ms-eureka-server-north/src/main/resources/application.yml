@@ -1,0 +1,13 @@
+server:
+  port: 8001
+eureka:
+  instance:
+    hostname: 127.0.0.1
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8002/eureka
+spring:
+  application:
+    name: ms-eureka-server-north

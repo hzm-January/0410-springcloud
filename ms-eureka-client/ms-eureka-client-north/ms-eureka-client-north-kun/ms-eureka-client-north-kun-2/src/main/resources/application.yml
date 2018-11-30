@@ -1,0 +1,12 @@
+server:
+  port: 8012
+spring:
+  application:
+    name: ms-eureka-client-north-kun
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8001/eureka
+logging:
+  level:
+   houzm.accumulation.ms: debug
